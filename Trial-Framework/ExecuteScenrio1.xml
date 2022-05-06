@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="create user">
+	<test name="actitime">
+		<classes>
+
+			<class name="com.sgtesting.dataprovider.Scenario1"></class>
+			<class name="com.sgtesting.dataprovider.Scenario2"></class>
+			<class name="com.sgtesting.dataprovider.Scenario3"></class>
+			<class name="com.sgtesting.dataprovider.Scenario4"></class>
+			<class name="com.sgtesting.dataprovider.Scenario5"></class>
+			<class name="com.sgtesting.dataprovider.Scenario6"></class>
+			<class name="com.sgtesting.dataprovider.Scenario7"></class>
+
+		</classes>
+	</test>
+</suite>
+		

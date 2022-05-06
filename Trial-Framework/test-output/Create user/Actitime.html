@@ -1,0 +1,379 @@
+<html>
+<head>
+<title>TestNG:  Actitime</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Actitime</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>60/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 24 08:00:58 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>264 seconds (264734 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.login()'><b>login</b><br>Test class: com.sgtesting.dataprovider.Scenario6<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario4.navigate()'><b>navigate</b><br>Test class: com.sgtesting.dataprovider.Scenario4</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.dataprovider.Scenario4@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario1.navigate()'><b>navigate</b><br>Test class: com.sgtesting.dataprovider.Scenario1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.dataprovider.Scenario1@bd4dc25</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario2.launch()'><b>launch</b><br>Test class: com.sgtesting.dataprovider.Scenario2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.dataprovider.Scenario2@a530d0a</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario3.deletecust()'><b>deletecust</b><br>Test class: com.sgtesting.dataprovider.Scenario3</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario3@1a18644</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.navigate()'><b>navigate</b><br>Test class: com.sgtesting.dataprovider.Scenario6</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.logout()'><b>logout</b><br>Test class: com.sgtesting.dataprovider.Scenario5</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario3.navigate()'><b>navigate</b><br>Test class: com.sgtesting.dataprovider.Scenario3</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.dataprovider.Scenario3@1a18644</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.deletecust()'><b>deletecust</b><br>Test class: com.sgtesting.dataprovider.Scenario7</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.logout()'><b>logout</b><br>Test class: com.sgtesting.dataprovider.Scenario6</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario2.logout()'><b>logout</b><br>Test class: com.sgtesting.dataprovider.Scenario2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.dataprovider.Scenario2@a530d0a</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.dataprovider.Scenario7</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.launch()'><b>launch</b><br>Test class: com.sgtesting.dataprovider.Scenario6</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.createproject()'><b>createproject</b><br>Test class: com.sgtesting.dataprovider.Scenario5<br>Parameters: Maggi, Noodles</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario2.createUser()'><b>createUser</b><br>Test class: com.sgtesting.dataprovider.Scenario2<br>Parameters: Basu, Patil, basu@gmail.com, basu17, basu123, basu123</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario2@a530d0a</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario2.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.dataprovider.Scenario2</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.dataprovider.Scenario2@a530d0a</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.dataprovider.Scenario5</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario4.launch()'><b>launch</b><br>Test class: com.sgtesting.dataprovider.Scenario4</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.dataprovider.Scenario4@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.deletecust()'><b>deletecust</b><br>Test class: com.sgtesting.dataprovider.Scenario5</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario1.login()'><b>login</b><br>Test class: com.sgtesting.dataprovider.Scenario1<br>Parameters: admin, manager</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.dataprovider.Scenario1@bd4dc25</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.createcust()'><b>createcust</b><br>Test class: com.sgtesting.dataprovider.Scenario5<br>Parameters: Nestle, FMGC</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.launch()'><b>launch</b><br>Test class: com.sgtesting.dataprovider.Scenario5</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario2.login()'><b>login</b><br>Test class: com.sgtesting.dataprovider.Scenario2<br>Parameters: admin, manager</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.dataprovider.Scenario2@a530d0a</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario3.logout()'><b>logout</b><br>Test class: com.sgtesting.dataprovider.Scenario3</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.dataprovider.Scenario3@1a18644</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario4.logout()'><b>logout</b><br>Test class: com.sgtesting.dataprovider.Scenario4</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.dataprovider.Scenario4@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.login()'><b>login</b><br>Test class: com.sgtesting.dataprovider.Scenario7<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.createcust()'><b>createcust</b><br>Test class: com.sgtesting.dataprovider.Scenario7<br>Parameters: BioPharma, Drugs</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.createproject()'><b>createproject</b><br>Test class: com.sgtesting.dataprovider.Scenario7<br>Parameters: Capsule, Packing</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario1.launch()'><b>launch</b><br>Test class: com.sgtesting.dataprovider.Scenario1</td>
+<td></td>
+<td>3</td>
+<td>com.sgtesting.dataprovider.Scenario1@bd4dc25</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.deleteproj()'><b>deleteproj</b><br>Test class: com.sgtesting.dataprovider.Scenario5</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.deleteproj()'><b>deleteproj</b><br>Test class: com.sgtesting.dataprovider.Scenario6</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.dataprovider.Scenario6</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario1.logout()'><b>logout</b><br>Test class: com.sgtesting.dataprovider.Scenario1</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.dataprovider.Scenario1@bd4dc25</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.modifyproject()'><b>modifyproject</b><br>Test class: com.sgtesting.dataprovider.Scenario6<br>Parameters: Production</td>
+<td></td>
+<td>8</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario4.deletecust()'><b>deletecust</b><br>Test class: com.sgtesting.dataprovider.Scenario4</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario4@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario4.modifycust()'><b>modifycust</b><br>Test class: com.sgtesting.dataprovider.Scenario4<br>Parameters: FOOD Manufacturing </td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario4@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario1.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.dataprovider.Scenario1</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.dataprovider.Scenario1@bd4dc25</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.launch()'><b>launch</b><br>Test class: com.sgtesting.dataprovider.Scenario7</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.logout()'><b>logout</b><br>Test class: com.sgtesting.dataprovider.Scenario7</td>
+<td></td>
+<td>2</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario1.deleteUser()'><b>deleteUser</b><br>Test class: com.sgtesting.dataprovider.Scenario1</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.dataprovider.Scenario1@bd4dc25</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.createproject()'><b>createproject</b><br>Test class: com.sgtesting.dataprovider.Scenario6<br>Parameters: Spirits, manufacturing</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.createtask()'><b>createtask</b><br>Test class: com.sgtesting.dataprovider.Scenario7<br>Parameters: Task1</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.deleteproj()'><b>deleteproj</b><br>Test class: com.sgtesting.dataprovider.Scenario7</td>
+<td></td>
+<td>6</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario2.deleteUser()'><b>deleteUser</b><br>Test class: com.sgtesting.dataprovider.Scenario2</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.dataprovider.Scenario2@a530d0a</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.deletetask()'><b>deletetask</b><br>Test class: com.sgtesting.dataprovider.Scenario7</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario4.login()'><b>login</b><br>Test class: com.sgtesting.dataprovider.Scenario4<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario4@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.navigate()'><b>navigate</b><br>Test class: com.sgtesting.dataprovider.Scenario5</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario3.launch()'><b>launch</b><br>Test class: com.sgtesting.dataprovider.Scenario3</td>
+<td></td>
+<td>7</td>
+<td>com.sgtesting.dataprovider.Scenario3@1a18644</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario3.createcust()'><b>createcust</b><br>Test class: com.sgtesting.dataprovider.Scenario3<br>Parameters: Mondelez, cadbury</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.dataprovider.Scenario3@1a18644</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario3.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.dataprovider.Scenario3</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.dataprovider.Scenario3@1a18644</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario5.login()'><b>login</b><br>Test class: com.sgtesting.dataprovider.Scenario5<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario5@7e7be63f</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario4.createcust()'><b>createcust</b><br>Test class: com.sgtesting.dataprovider.Scenario4<br>Parameters: Nestle, FMGC</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.dataprovider.Scenario4@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario1.createUser()'><b>createUser</b><br>Test class: com.sgtesting.dataprovider.Scenario1<br>Parameters: Sujeeth, Kumar, sujeeth@gmail.com, sujeeth17, welcome123, welcome123</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.dataprovider.Scenario1@bd4dc25</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario4.closeApp()'><b>closeApp</b><br>Test class: com.sgtesting.dataprovider.Scenario4</td>
+<td></td>
+<td>1</td>
+<td>com.sgtesting.dataprovider.Scenario4@5acf93bb</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.createcust()'><b>createcust</b><br>Test class: com.sgtesting.dataprovider.Scenario6<br>Parameters: USL, Bewerages</td>
+<td></td>
+<td>9</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario3.login()'><b>login</b><br>Test class: com.sgtesting.dataprovider.Scenario3<br>Parameters: admin, manager</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario3@1a18644</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario2.modifyuser()'><b>modifyuser</b><br>Test class: com.sgtesting.dataprovider.Scenario2<br>Parameters: N</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.dataprovider.Scenario2@a530d0a</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario2.navigate()'><b>navigate</b><br>Test class: com.sgtesting.dataprovider.Scenario2</td>
+<td></td>
+<td>4</td>
+<td>com.sgtesting.dataprovider.Scenario2@a530d0a</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario6.deletecust()'><b>deletecust</b><br>Test class: com.sgtesting.dataprovider.Scenario6</td>
+<td></td>
+<td>5</td>
+<td>com.sgtesting.dataprovider.Scenario6@6cd28fa7</td></tr>
+<tr>
+<td title='com.sgtesting.dataprovider.Scenario7.navigate()'><b>navigate</b><br>Test class: com.sgtesting.dataprovider.Scenario7</td>
+<td></td>
+<td>0</td>
+<td>com.sgtesting.dataprovider.Scenario7@614ca7df</td></tr>
+</table><p>
+</body>
+</html>
